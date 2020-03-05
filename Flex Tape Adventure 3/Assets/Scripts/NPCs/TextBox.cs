@@ -11,6 +11,7 @@ public class TextBox : MonoBehaviour
 
     [SerializeField] private GameObject speakerObject;
     [SerializeField] private GameObject dialogueObject;
+    [SerializeField] private bool dissapearAfterSpace = true;
 
     public int dialogueIndex = 0;
 
@@ -25,10 +26,13 @@ public class TextBox : MonoBehaviour
     {
         speakerObject.GetComponent<TextMeshProUGUI>().text = speaker + ":";
         dialogueObject.GetComponent<TextMeshProUGUI>().text = shownDialogue;
-        if(dialogueIndex >= dialogue.Length && Input.GetKeyDown(KeyCode.Space))
+        if(dialogueIndex >= dialogue.Length && (Input.GetKeyDown(KeyCode.Space) && dissapearAfterSpace))
         {
             dialogueIndex = 0;
-            gameObject.SetActive(false);
+            if (dissapearAfterSpace)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 
