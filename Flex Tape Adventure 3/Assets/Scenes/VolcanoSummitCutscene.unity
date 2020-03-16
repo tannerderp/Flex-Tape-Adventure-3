@@ -729,9 +729,10 @@ MonoBehaviour:
     stop it from killing us all.
   - I've done my research, and the only thing that could seal this hole is a combination
     of flex seal, flex tape, flex glue, and flex paste.
-  - All those products got scattered around when the flex seal hq was destroyed. Go
-    find them before its too late!
-  - Take this chainsaw to use as a weapon or to break stuff. Press Shift or F to use
+  - All those products got scattered around when the flex seal hq was destroyed. I
+    saw two of them go to the left and the other two go to the right. Go find them
+    before its too late!
+  - use this chainsaw to use as a weapon or to break stuff. Press Shift or F to use
     it.
   speaker: Jon
 --- !u!1 &1677127223
@@ -744,7 +745,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1677127225}
   - component: {fileID: 1677127224}
-  - component: {fileID: 1677127226}
   m_Layer: 0
   m_Name: Phil
   m_TagString: Untagged
@@ -814,22 +814,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1677127226
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677127223}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffbfe5652da31ff4e8ccf5b7bbaa5d22, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

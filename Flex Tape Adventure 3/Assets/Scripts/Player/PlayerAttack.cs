@@ -8,6 +8,8 @@ public class PlayerAttack : MonoBehaviour
     private Animator animator;
     private AudioSource gruntSound;
 
+    [SerializeField] BoxCollider2D chainsawCollider;
+
     private int sawCooldown = 40;
 
     // Start is called before the first frame update
@@ -24,15 +26,17 @@ public class PlayerAttack : MonoBehaviour
         sawCooldown++;
         if((Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.F)) && sawCooldown >= 40){
             sawCooldown = 0;
+            chainsawCollider.enabled = true;
             animator.SetBool("Sawing", true);
             movementScript.canMove = false;
             gruntSound.Play();
         }
         if(sawCooldown >= 40)
         {
+            chainsawCollider.enabled = false;
             animator.SetBool("Sawing", false);
             movementScript.canMove = true;
         }
-        Debug.Log(animator.GetBool("Sawing"));
+        //Debug.Log(animator.GetBool("Sawing"));
     }
 }
