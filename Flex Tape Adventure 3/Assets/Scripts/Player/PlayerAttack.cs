@@ -35,6 +35,9 @@ public class PlayerAttack : MonoBehaviour
         {
             chainsawCollider.enabled = false;
             animator.SetBool("Sawing", false);
+        }
+        if(sawCooldown == 40)
+        {
             movementScript.canMove = true;
         }
         //Debug.Log(animator.GetBool("Sawing"));
