@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Enemy" && animator.GetBool("Hurt") == false)
         {
             rigidBody.velocity = new Vector2(0, 0);
             float enemyDirection = -(collision.gameObject.transform.localScale.x / Mathf.Abs(collision.gameObject.transform.localScale.x));
@@ -99,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Hurt", true);
             transform.position = new Vector2(transform.position.x, transform.position.y + 1);
             rigidBody.velocity = new Vector2(-direction * 8f, 8f);
+            health -= 5;
             Destroy(collision.gameObject);
         }
     }

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VolcanoSummitCutscene.unity
     guid: b5443482b119acc409540735984b2af9
+  - enabled: 1
+    path: Assets/Scenes/GameOverCutscene.unity
+    guid: 04cb1e957cedebc4c9a059c89ee04328
   m_configObjects: {}
