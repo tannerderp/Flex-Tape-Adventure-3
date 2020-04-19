@@ -12,6 +12,7 @@ public class TextBox : MonoBehaviour
     [SerializeField] private GameObject speakerObject;
     [SerializeField] private GameObject dialogueObject;
     [SerializeField] private bool dissapearAfterSpace = true;
+    [SerializeField] private bool isCutscene = false;
 
     public int dialogueIndex = 0;
 
@@ -24,6 +25,11 @@ public class TextBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(dialogueObject.GetComponent<TextMeshProUGUI>().text == "Put Crap here" && !isCutscene)
+        {
+            dialogueIndex = 0;
+            gameObject.SetActive(false);
+        }
         speakerObject.GetComponent<TextMeshProUGUI>().text = speaker + ":";
         dialogueObject.GetComponent<TextMeshProUGUI>().text = shownDialogue;
         if(dialogueIndex >= dialogue.Length && (Input.GetKeyDown(KeyCode.Space) && dissapearAfterSpace))

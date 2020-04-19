@@ -470,6 +470,11 @@ PrefabInstance:
       propertyPath: dissapearAfterSpace
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5892861037216924717, guid: 790413d899734284c954a499ed5d0f7a,
+        type: 3}
+      propertyPath: isCutscene
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5892861037084155530, guid: 790413d899734284c954a499ed5d0f7a,
         type: 3}
       propertyPath: m_textInfo.characterCount

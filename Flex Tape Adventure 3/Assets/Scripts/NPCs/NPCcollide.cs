@@ -19,7 +19,7 @@ public class NPCcollide : MonoBehaviour
         messageBubble = this.gameObject.transform.GetChild(0).gameObject;
         textBox = GameObject.Find("Text Box");
         textBoxScript = textBox.GetComponent<TextBox>();
-        textBox.SetActive(false);
+        //textBox.SetActive(false);
         inTrigger = false;
     }
 
