@@ -1,0 +1,2 @@
+C:\Users\tanne\Documents\Unity Repos\Flex Tape Adventure 3\Flex-Tape-Adventure-3\Flex Tape Adventure 3\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\tanne\Documents\Unity Repos\Flex Tape Adventure 3\Flex-Tape-Adventure-3\Flex Tape Adventure 3\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
